@@ -70,3 +70,41 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+function introduceTheHogwarts(hogwarts) {
+  let { firstName, lastName, house, ...rest } = hogwarts;
+  console.log(
+    hogwarts[0].firstName,
+    hogwarts[0].lastName,
+    ",",
+    hogwarts[1].firstName,
+    hogwarts[1].lastName,
+    ",",
+    hogwarts[2].firstName,
+    hogwarts[2].lastName,
+    ",",
+    hogwarts[8].firstName,
+    hogwarts[8].lastName,
+    ",",
+    hogwarts[9].firstName,
+    hogwarts[9].lastName,
+    "is members of House",
+    hogwarts[0].house,
+    "."
+  );
+}
+
+introduceTheHogwarts(hogwarts);
+
+function teacherWithPet(hogwarts) {
+  let { firstName, lastName } = hogwarts;
+  console.log(
+    hogwarts[9].firstName,
+    hogwarts[9].lastName,
+    "and his fiery",
+    hogwarts[9].pet,
+    "pet."
+  );
+}
+
+teacherWithPet(hogwarts);
