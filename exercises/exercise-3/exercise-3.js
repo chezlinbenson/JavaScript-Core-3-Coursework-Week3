@@ -8,9 +8,8 @@ let order = [
 ];
 
 
-function printReceipt(order){
-  let {itemName, quantity, unitPrice} = order;
-  console.log(order[0].itemName)
+function printReceipt(orders){
+ let myOrders = orders.forEach(item => item.quantity, item.itemName, item.unitPrice);
 }
 
 printReceipt(order)
