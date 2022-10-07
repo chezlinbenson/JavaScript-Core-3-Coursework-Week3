@@ -9,7 +9,25 @@ let order = [
 
 
 function printReceipt(orders){
- let myOrders = orders.forEach(item => item.quantity, item.itemName, item.unitPrice);
+  console.log("QTY \t", "ITEM \t", "TOTAL \t");
+  let myQuantity = orders.forEach((item) => {
+    let { quantity } = item;
+    console.log(quantity);
+  });
+
+  let myItems = orders.forEach((item) => {
+    let { itemName } = item;
+    console.log(itemName);
+  });
+
+  let myTotal = orders.forEach((item) => {
+    let { unitPrice } = item;
+    console.log(unitPrice);
+  });
+  console.log("TOTAL: \t");
+  
+  // item.quantity
+  
 }
 
 printReceipt(order)
